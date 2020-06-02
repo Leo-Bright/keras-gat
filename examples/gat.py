@@ -11,7 +11,7 @@ from keras_gat import GraphAttention
 from keras_gat.utils import load_data, preprocess_features
 
 # Read data
-A, X, Y_train, Y_val, Y_test, idx_train, idx_val, idx_test = load_data('cora')
+A, X, Y_train, Y_val, Y_test, idx_train, idx_val, idx_test = load_data('sanfrancisco')
 
 # Parameters
 N = X.shape[0]                # Number of nodes in the graph
