@@ -40,7 +40,7 @@ def load_data(dataset_str):
                 objects.append(pkl.load(f))
 
     x, y, tx, ty, allx, ally, graph = tuple(objects)
-    test_idx_reorder = parse_index_file("{}ind.{}.test.index".format(DATA_PATH, dataset_str))
+    test_idx_reorder = parse_index_file("data/ind.{}.test.index".format(DATA_PATH, dataset_str))
     test_idx_range = np.sort(test_idx_reorder)
 
     if dataset_str == 'citeseer':
